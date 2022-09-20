@@ -1,5 +1,5 @@
 # Alhambra
 
-Y1 - Project I: Create the board game Alhambra (Howest)
+Y1 - Project I: Create the board game Alhambra
 
-The game server is down.
+The game was run on Howest servers (down)
