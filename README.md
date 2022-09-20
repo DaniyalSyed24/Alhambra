@@ -1,5 +1,5 @@
 # Alhambra
 
-Y1 Project I (Howest) 
+Y1 - Project I (Howest)
 
-Game server down
+The game server is down.
