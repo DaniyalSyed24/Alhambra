@@ -1,0 +1,380 @@
+/* ---------- MAIN ---------- */
+body {
+    display: grid;
+    grid-template-areas: 'scoreboard    board       board    players'
+                         'moneyBank  board       board       buildingMarket'
+                         'wallet     options     options     tiles';
+}
+
+/* ---------- Combined ---------- */
+.wallet, .moneyBank, .scoreboard {
+    border: 5px double #996f43;
+    width: 20vw;
+    height: 35vh;
+}
+
+.moneyBank h1, .buildingMarket h1, .wallet h1, .players h1 {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.scoreboard {
+    margin-left: 35px;
+}
+
+.moneyBank, .wallet {
+    margin-left: 71px;
+}
+
+.players, .buildingMarket, .tiles {
+    margin-right: 50px;
+}
+
+/* ---------- Alhambra Board ---------- */
+.alh {
+    grid-area: board;
+    width: 50vw;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.alh-board {
+    border: 5px double #996f43;
+    display: inline-block;
+    padding: 3px 3px 0 3px;
+}
+
+.alh-board__row {
+}
+
+.alh-board__field {
+    display: inline-block;
+    border: 1px solid black;
+    width: 3vw;
+    height: 3vw;
+}
+
+.alh h1 {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+/* ---------- Building Market ---------- */
+.buildingMarket {
+    grid-area: buildingMarket;
+    border: 5px double #996f43;
+    width: 20vw;
+    height: 30vh;
+    margin-top: -65px;
+}
+
+.buildingMarket-coins, .buildingMarket-buildings {
+    width: 100%;
+    margin-top: 5%;
+}
+
+.buildingMarket-coins > div, .buildingMarket-buildings > div {
+    width: 23%;
+    height: 23%;
+    display: inline-block;
+}
+
+.buildingMarket-coins > div > img, .buildingMarket-buildings > div > img {
+    width: 100%;
+    height: 100%;
+}
+
+.buildingMarket-buildings > div > h1 {
+    position: absolute;
+    transform: translate(-45%, -111%);
+    font-size: 15px;
+}
+
+/* ---------- Money Bank ---------- */
+.moneyBank {
+    grid-area: moneyBank;
+    height: 8vw;
+    margin-top: -2px;
+}
+
+.moneyBank > div {
+    display: inline-block;
+    width: 15%;
+    color: white;
+}
+
+/* ---------- Your Wallet ---------- */
+.wallet {
+    grid-area: wallet;
+    height: 10vw;
+    margin-top: -70px;
+}
+
+.wallet > article {
+    margin-top: 25px;
+    width: 15%;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+/* ---------- Your Reserve ---------- */
+.tiles {
+    grid-area: tiles;
+    margin-top: 8px;
+}
+
+.tiles a {
+    text-decoration: none;
+    color: #463833;
+    display: inline-block;
+    width: 15vw;
+    padding: 20px;
+    background: url("../../images/Button.png");
+    background-size: 100% 100%;
+    transition-duration: 0.3s;
+}
+
+.tiles a:hover {
+    color: #996f43;
+    transform: translateY(-10px);
+}
+
+/* ---------- Scoreboard ---------- */
+.scoreboard {
+    grid-area: scoreboard;
+    width: 24vw;
+    height: 48vh;
+    margin-top: 50px;
+}
+
+.alh-score__field {
+    display: inline-block;
+    border: 1px solid black;
+    width: 2vw;
+    height: 2vw;
+}
+
+/* ---------- Options Buttons ---------- */
+.options {
+    grid-area: options;
+    width: 50vw;
+}
+
+.options li {
+    margin-bottom: 1vh;
+    display: inline-block;
+    width: 15%;
+}
+
+.options a {
+    font-size: 25px;
+    text-decoration: none;
+    color: #463833;
+    display: inline-block;
+    padding: 20px;
+    background: url("../../images/Button.png");
+    background-size: 100% 100%;
+}
+
+.options a:hover{
+    color: #996f43;
+}
+/* ---------- Players ---------- */
+.players {
+    grid-area: players;
+    border: 5px double #996f43;
+    margin-top: 80px;
+    width: 20vw;
+    height: 35vh;
+}
+
+/* ---------- Other ---------- */
+img {
+    width: 3.5vw;
+    height: 4.5vh;
+}
+
+.selected {
+    opacity: 50%;
+}
+
+.unselected {
+}
+
+.hidden {
+    display: none;
+}
+
+.pay {
+    display: none;
+}
+
+.move {
+    display: none;
+}
+
+/* ---------- POPUPS ---------- */
+#popup-buildings {
+    position: fixed;
+    top: 3.5%;
+    left: 10%;
+    width: 80vw;
+    border: 1px solid black;
+    background-color: white;
+    height: 45vw;
+}
+
+#popup-otherAlhambras {
+    width: 90vw;
+    position: fixed;
+    margin: 0 auto 0 auto;
+    height: 45vw;
+    left: 4.5%;
+    top: 3%;
+    background-color: white;
+}
+
+/* ----- Menu pop-up ----- */
+.open-menu { /* menu button */
+    width: 50px;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    right: 65px;
+}
+
+@keyframes slideIn {
+    0% {
+    }
+    100% {
+        transform: translateX(-500px);
+    }
+}
+
+@keyframes slideOut {
+    0% {
+    }
+    100% {
+        transform: translateX(500px)
+    }
+}
+
+#popup-menu { /* menu popup */
+    background: url("../../images/background.png");
+    background-size: 200%;
+    position: fixed;
+    width: 17%;
+    height: 80%;
+    bottom: 10%;
+    border: 5px solid #996f43;
+    border-radius: 18px;
+    right: -500px;
+    animation: slideIn 0.5s ease forwards;
+}
+
+.close-menu-button { /* close menu button */
+    position: fixed;
+    right: 4%;
+    top: 2%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    transform: scale(3);
+}
+
+/* pop-up content style */
+div#popup-menu h1 {
+    font-size: 40px;
+    text-decoration: underline;
+    margin: 30px 0 60px 0;
+}
+
+div#popup-menu p {
+    font-size: 35px;
+    margin-bottom: 60px;
+}
+
+div#popup-menu img {
+    margin-top: 50px;
+    width: 80%;
+}
+
+div#popup-menu a {
+    text-decoration: none;
+    color: #463833;
+    display: inline-block;
+    width: 10vw;
+    padding: 20px;
+    background: url("../../images/Button.png");
+    background-size: 100% 100%;
+    transition-duration: 0.3s;
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+
+div#popup-menu a:hover {
+    color: #996f43;
+    transform: translateY(-10px);
+}
+
+/* active menu section in pop-up */
+div#popup-menu a.active {
+    color: #996f43;
+}
+
+div#popup-menu a:hover.active {
+    transform: translateY(0);
+    cursor: default;
+}
+
+/* ----- END menu pop-up ----- */
+
+/* ----- Other players alhambra's pop-up ----- */
+#popup-otherAlhambras .close-alhambras-button {
+    position: fixed;
+    right: 6%;
+    top: 6%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    transform: scale(3);
+}
+
+#popup-otherAlhambras {
+    border: 5px solid #996f43;
+    border-radius: 15px;
+    background: url("../../images/background.png");
+    background-size: 100%;
+}
+
+.players-grid-container {
+    display: grid;
+    grid-template-columns: 800px 800px;
+    grid-template-rows: 375px 375px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin: 3%;
+}
+
+.playerbox {
+    background-color: white;
+    padding-top: 5px;
+}
+
+/* ---- END Other players alhambra's pop-up ---- */
+
+/* ---- Building market counter ---- */
+.counter {
+    color: red;
+    margin-left: 10px;
+    font-size: 30px;
+    border: 2px dotted red;
+}
+
+#menu-img {
+    height: 130px;
+}

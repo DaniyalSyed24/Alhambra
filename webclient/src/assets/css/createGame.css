@@ -1,0 +1,74 @@
+/* -------- GENERAL --------*/
+body {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* ---- Create game form ---- */
+form {
+    margin-top: 4vh;
+}
+
+input {
+    margin-bottom: 2vh;
+    width: 100%;
+}
+
+label {
+    margin-bottom: 1vh;
+}
+
+form, fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form a {
+    font-size: 1.5rem;
+    border: none;
+    text-decoration: none;
+    color: #463833;
+    display: inline-block;
+    width: 15vw;
+    padding: 20px;
+    background: url("../../images/Button.png");
+    background-size: 100% 100%;
+    transition-duration: 0.3s;
+}
+
+form a:hover {
+    color: #996f43;
+    transform: translateY(-10px);
+}
+
+/* ---- Input Fields ---- */
+
+input[type=number] {
+    outline: none;
+    height: 20px;
+    padding: 5px;
+    background-color: #F1ECD8;
+    color: #463833;
+    border: 1px solid #463833;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: 0.5s;
+    text-align: center;
+}
+
+input[type=number]:focus {
+    background-color: cornsilk;
+}
+
+input[type=checkbox], form a {
+    cursor: pointer;
+}
+
+#playerLimit {
+    width: 20%;
+    margin: auto auto 2vh auto;
+}
+

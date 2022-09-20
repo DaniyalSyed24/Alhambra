@@ -1,0 +1,116 @@
+/* -------- GENERAL --------*/
+body {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* -------- MAIN --------*/
+main {
+    border: 2px solid #463833;
+    border-radius: 10px;
+}
+
+h1 {
+    padding: 10px;
+    margin: 0 50px 20px 50px;
+    border-bottom: 1px solid #463833;
+}
+
+
+/* ---- Table ---- */
+div.main-table {
+    height: 440px;
+    overflow-y: scroll;
+}
+
+table {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+th {
+    font-size: 1.2vw;
+    padding-bottom: 15px;
+}
+
+td {
+    font-size: 1vw;
+    padding-bottom: 10px;
+}
+
+th td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+a.button {
+    text-decoration: none;
+    background-color: #F1ECD8;
+    color: black;
+    border: 1px solid #996f43;
+    padding: 0 8px;
+    border-radius: 12px;
+    font-size: 17px;
+}
+
+a.button:hover {
+    color: #996f43;
+}
+
+/* ---- Popup ---- */
+#popup {
+    background-color: #F1ECD8;
+    position: fixed;
+    top: 50%;
+    left: 42%;
+    padding: 15px;
+    font-size: 22px;
+    border: 2px solid #996f43;
+    border-radius: 15px;
+}
+
+.popup-header {
+    padding: 0 5px 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.popup-header, p {
+    font-size: 28px;
+}
+
+label + a { /*submit button*/
+    text-decoration: none;
+    background-color: #F1ECD8;
+    color: black;
+    padding: 0 8px;
+    font-size: 25px;
+    border: 1px solid #996f43;
+    border-radius: 8px;
+    vertical-align: sub;
+}
+
+input[type=text] { /*submit button*/
+    height: 25px;
+}
+
+label + a:hover {
+    color: #996f43;
+}
+
+.close-button {
+    position: fixed;
+    right: 38%;
+    top: 51%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    transform: scale(2);
+}
+
+

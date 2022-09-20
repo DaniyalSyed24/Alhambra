@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alhambra</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/popUp.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/lobbypage.css"/>
+    <script src="assets/js/playersLobby.js"></script>
+    <script src="assets/js/popUpRules.js"></script>
+
+</head>
+<body>
+<header>
+    <div class="back">
+        <a href="queuePlayersFound.html"><img class="back-arrow" src="./images/back-arrow.png" alt="Back Arrow"></a>
+    </div>
+
+    <img class="bigLogo" src="./images/Logo.png" alt="Epic Alhambra logo">
+</header>
+<main>
+
+    <table>
+        <thead>
+        <tr>
+            <th colspan="2" id="header">Player list</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Player 1  </td>
+            <td>| Ready</td>
+        </tr>
+        <tr>
+            <td>Player 2</td>
+            <td>| Ready</td>
+        </tr>
+        <tr>
+            <td>You</td>
+            <td id="yourReadyTd">| Not ready</td>
+        </tr>
+        <tr>
+            <td>Player 4</td>
+            <td>| Ready</td>
+        </tr>
+        <tr>
+            <td>Player 5</td>
+            <td>| Ready</td>
+        </tr>
+        <tr>
+            <td>Player 6</td>
+            <td>| Ready</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <a id="readyUp" href="#">Ready up</a>
+
+    <p>The game will start when all players are ready.</p>
+    <ul>
+        <li><a id="myBtn" href="#">Game Rules</a></li>
+    </ul>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+        </div>
+</main>
+<footer>
+    <p>Hint: <span>Every turn you can choose to take money or buy buildings.</span></p>
+</footer>
+</body>
+</html>

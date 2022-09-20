@@ -1,0 +1,105 @@
+/* -------- GENERAL --------*/
+body {
+    background: url("../../images/background.png");
+    background-size: 50%;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/* -------- LOGO --------*/
+.bigLogo {
+    width: 30vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    animation: smoothBoy 1.8s ease-in-out infinite;
+}
+
+@keyframes smoothBoy {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+}
+
+header {
+    margin-bottom: 8vh;
+    margin-top: 5vh;
+}
+
+/* -------- MAIN --------*/
+main {
+    width: 60%;
+    text-align: justify;
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+.first, .second {
+    width: 50%;
+}
+
+h1 {
+    width: 100%;
+    border-bottom: 1px solid black;
+    font-weight: bolder;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: bold;
+    border: 2px solid darkred;
+    background-color: transparent;
+    padding: 2px;
+}
+
+h3 {
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: bolder;
+    padding-left: 20px;
+}
+
+h4 {
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+p {
+    margin: 5px 0 15px;
+    font-family: "Georgia", "Verdana", serif;
+    line-height: 25px;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+article {
+    background-color: #ff634d;
+    padding: 10px 20px 10px;
+    margin: 15px 0 15px;
+
+}
+
+.second {
+    background-color: #95d2ba;
+    background-blend-mode: color;
+}
+
+/* ---- Back ---- */
+div.back {
+    position: absolute;
+    top: 30px;
+}
+
+.back-arrow {
+    max-width: 50px;
+    height: auto;
+}

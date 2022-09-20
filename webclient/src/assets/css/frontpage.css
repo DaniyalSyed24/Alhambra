@@ -1,0 +1,27 @@
+/* ---- Menu ---- */
+ul {
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+li {
+    margin-bottom: 2vh;
+}
+
+a {
+    text-decoration: none;
+    color: #463833;
+    display: inline-block;
+    width: 15vw;
+    padding: 20px;
+    background: url("../../images/Button.png");
+    background-size: 100% 100%;
+    transition-duration: 0.3s;
+}
+
+a:hover {
+    color: #996f43;
+    transform: translateY(-10px);
+}

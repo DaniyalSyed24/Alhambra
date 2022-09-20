@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alhambra</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/popUp.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/PlayerList.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/board.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
+</head>
+<body>
+<!-- menu popup -->
+<img class="open-menu" src="./images/menu-icon.png" alt="Menu Icon">
+
+<div id="popup-menu" class="hidden">
+    <button class="close-menu-button">&times;</button>
+    <img id="menu-img" class="" src="./images/Logo.png" alt="Epic Alhambra logo">
+
+    <h1>Menu</h1>
+
+    <ul>
+        <li><a href="#" class="active"> My Board</a></li>
+        <li><a href="#" class="open-alhambras">Alhambra's</a></li>
+        <li><a href="#">Surrender</a></li>
+        <li><a id="myBtn">Game Rules</a></li>
+    </ul>
+</div>
+<!-- end menu popup -->
+<!--Div voor popup regels-->
+<div id="myModal" class="modal">
+
+</div>
+<!--Div voor popup spelerlijst-->
+<div id="playerlistModal" class="modal">
+
+</div>
+<!--einde divs voor popups-->
+
+<div class="players">
+    <ul class="playersListUl"></ul>
+</div>
+<div class="wallet"></div>
+<div class="moneyBank">
+    <h1>Money Bank</h1>
+    <div class="coinsToTake"></div>
+</div>
+<div class="scoreboard">
+
+    <div class="alh-scoreboard">
+        Scoreboard
+    </div>
+</div>
+<div class="buildingMarket">
+    <h1>Building market <span class="counter">50</span></h1>
+    <div class="buildingMarket-coins">
+        <div><img src="assets/media/coins/blue.png" alt="blue coin"></div>
+        <div><img src="assets/media/coins/green.png" alt="green coin"></div>
+        <div><img src="assets/media/coins/orange.png" alt="orange coin"></div>
+        <div><img src="assets/media/coins/yellow.png" alt="yellow coin"></div>
+
+    </div>
+    <div class="buildingMarket-buildings">
+        <div class="blue"></div>
+        <div class="green"></div>
+        <div class="orange"></div>
+        <div class="yellow"></div>
+    </div>
+</div>
+<div class="alh">
+    <div class="alh-board">
+
+    </div>
+    <h1>Your Alhambra</h1>
+</div>
+<div class="tiles">
+    <a href="#" class="open">OPEN</a>
+</div>
+<div id="popup-buildings" class="hidden">
+    <div id="popup-buildings__tiles">
+    </div>
+    <a href="#" class="close">&times;</a>
+    <a href="#" id= "move" class="move">move</a>
+</div>
+
+<div id="popup-otherAlhambras" class="hidden">
+    <button class="close-alhambras-button">&times;</button>
+    <div class="players-grid-container"></div>
+</div>
+<div class="options">
+    <ul class="clicked">
+        <li>
+            <a href="#" class="build" >build</a>
+        </li>
+        <li>
+            <a href="#" class="buy" >buy</a>
+        </li>
+        <li>
+            <a href="#" class="earn">earn</a>
+        </li>
+    </ul>
+    <ul>
+        <li><a href="#" id="pay" class="pay">pay</a> </li>
+    </ul>
+</div>
+<script src="assets/js/coins.js"></script>
+<script src="assets/js/communication.js"></script>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/prepareGame.js"></script>
+<script src="assets/js/game.js"></script>
+<script src="assets/js/menuPopups.js"></script>
+<script src="assets/js/PlayerList.js"></script>
+<script src="assets/js/popUpRules.js"></script>
+</body>
+</html>

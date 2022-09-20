@@ -1,0 +1,100 @@
+.first, .second{
+    width: 50%;
+}
+
+.modal-content h1{
+    width: 100%;
+    border-bottom: 1px solid black;
+    font-weight: bolder;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.modal-content h2 {
+    font-size: 25px;
+    font-weight: bold;
+    border: 2px solid darkred;
+    background-color: transparent;
+    padding: 2px;
+}
+
+.modal-content h3 {
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: bolder;
+    padding-left: 20px;
+}
+
+.modal-content h4 {
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.modal-content p {
+    margin: 5px 0 15px;
+    font-family: "Georgia", "Verdana", serif;
+    line-height: 25px;
+}
+
+.modal-content ul{
+    list-style-type: square;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.modal-content article{
+    background-color: #ff634d;
+    padding: 10px 20px 10px;
+    margin: 15px 0 15px;
+
+}
+
+.modal-content .second{
+    background-color: #95d2ba;
+    background-blend-mode: color;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    text-align: justify;
+    margin: 0 auto 0 auto;
+}
+
+/* Modal Content */
+.modal-content {
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    background: url("../../images/background.png");
+}
+
+/* The Close Button */
+.close {
+    text-decoration: none;
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+    position: fixed;
+    top: 45px;
+    right: 200px;
+    transform: scale(2);
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

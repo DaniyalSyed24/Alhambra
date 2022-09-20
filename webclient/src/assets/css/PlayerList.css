@@ -1,0 +1,22 @@
+#listplayers {
+    list-style-type: disc;
+    text-align: center;
+    width: 5rem;
+}
+
+.playerListPage {
+    width: 50%;
+    margin: auto;
+}
+
+.modal-content {
+    width: 35rem;
+}
+
+.modal-content main{
+    vertical-align: center;
+}
+#listplayersContainer {
+    text-align: center;
+    padding-left: 40%;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alhambra</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/createGame.css"/>
+
+</head>
+<body>
+<header>
+    <img class="bigLogo" src="./images/Logo.png" alt="Epic Alhambra logo">
+</header>
+<main>
+    <div class="back">
+        <a href="./frontpage.html"><img class="back-arrow" src="./images/back-arrow.png" alt="Back Arrow"></a>
+    </div>
+
+    <h1>Create a lobby</h1>
+    <form method="get">
+        <label for="username">Username: </label>
+        <input type="text" id="username" name="username">
+        <a id="createLobby" href="#">Create Game Lobby</a>
+        <a id="next" href="queueSearchingForPlayers.html">next</a>
+    </form>
+
+</main>
+
+<script src="assets/js/communication.js"></script>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/createGame.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
